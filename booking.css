@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bree+Serif&family=Outfit:wght@600&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu+Condensed&family=Ubuntu:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(230, 230, 230);    
+    line-height: 1.618em;
+    color: rgb(95, 69, 60) ;
+    margin:0px;
+  }
+  .booking{
+    display: block;
+    align-items: center;
+    height: 40rem;
+    margin: auto;
+    z-index: 1;
+  }
+  #logo{
+    text-align: center;
+    padding: 20px;
+  }
+  #topic{
+    align-items:center;
+    text-align:center;
+    font-size: 20px;
+    color: white;
+    margin-left: auto;
+  }
+  .menuBar {
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;
+    position: fixed; 
+    margin-bottom: 50px;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    border-bottom: 1px solid  rgb(95, 69, 60);
+    width: 100%;
+    
+}
+.a {
+    margin: 10rem;
+}
+.b {
+    margin: 10rem;
+}
+
+.menuBar .logo{
+    font-family: 'Audiowide', cursive;
+    color: rgb(77, 77, 77);
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+.menuBar a {
+    padding: 20px 20px;
+    color:rgb(95, 69, 60);
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    display: block;
+    float: left;
+}
+.menuBar a:not(:first-child)::before{
+  content: "";
+  position:relative;
+  display: block;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(141, 141, 141);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menuBar a:hover::before{
+    transform: scaleX(1);
+}
+
+.menuBar .menu_icon {
+    display: none;
+    float: right;
+}
+
+.menuBar .on_active {
+    border-bottom: 1px solid #000;
+    font-weight: bolder;
+}
+.menuBar img {
+    padding: 30px 30px;
+    display: block;
+    float: left;
+    width: 60px;
+    height: 30px;
+}
+
+  .wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 0 30px;
+  }
+  .wrapper  a{
+    display: flex;
+    text-decoration: none;
+    color: #ffd500;
+    line-height: 1;
+    padding: 10px;
+    justify-content: center;
+    background-color: rgb(121, 93, 83);
+    
+  }
+  .wrapper a:hover{
+    background-color: rgb(173, 145, 136);
+    color: #ffd500;
+  }
+  .tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: rgb(95, 69, 60);
+    height: 16rem;
+  }
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  .tabs::after {
+    clear: both;
+  }
+  .tab {
+    float: left;
+  }
+  .tab-switch {
+    display: none;
+  }
+  .tab-label {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: rgb(95, 69, 60);
+    border-right: 0.125rem solid rgb(95, 69, 60);
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+  }
+  .tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+    border-radius: 0 10px 0 0 ;
+    background-color: rgb(121, 93, 83);
+  }
+  .tab-content {
+    min-height: 10rem;
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 10px;
+    background: rgb(95, 69, 60);
+    color: rgb(212, 205, 202);
+    opacity: 0;
+    transition: all 0.35s;
+    display: flex;
+  }
+  .tab-content .image{
+    position: relative;
+    width:50% ;
+    background-size: cover;
+    background-position: bottom center;
+    height: 400px;
+  }
+  .image.intro{
+    background-image: url(Images/intro.jpg);
+    width: 100%;
+    background-position: center center;
+    margin: 5px;
+  }
+  .image.conference{  
+    background-image: url(Images/conference.jpg);
+  }
+  .image.restaurant{
+    background-image: url(Images/restaurant.jpg);
+  }
+  .image.wedding{
+    background-image: url(Images/weddingpic.jpg);
+  }
+
+  .booking-content{
+    line-height: 1.3;
+    padding: 0 25px 25px 25px;
+  }
+  .booking-content input{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+  }
+  #appt{
+    width: 45%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #submit1{
+    margin: 25px 0 0 0 ;
+    width: 40%;
+  }
+  #submit2{
+    margin:  0 0 0 25px ;
+    width: 40%;
+  }
+  #submit3{
+    margin:  20px 0 0 0  ;
+    width: 40%;
+  }
+  .tab-switch:checked + .tab-label {
+    background: rgb(173, 145, 136);
+    color: #fff;
+    border-bottom: 0;
+    border-right: 0.125rem solid rgb(173, 145, 136)s;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+  }
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+
+  @media screen and (max-width: 1000px) {
+    /* removes the a links on the menu, whilst on mobile screen */
+    .menuBar a:not(:first-child) {
+        display: none;
+    }
+    .menuBar a.menu_icon {
+        float: right;
+        display: block;
+    }
+
+    .menuBar.responsive {
+        position: fixed;
+        transition: 1s;
+        margin:0;
+    }
+
+    .menuBar.responsive .menu_icon {
+        position:absolute;
+        right:0;
+        top:0;
+    }
+
+    .menuBar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .menuBar .menu_icon {
+        display: block;
+        float: right;
+    }
+
+    .menuBar a.menu_icon {
+        float: right;
+        display: block;
+    }
+
+    .menuBar.responsive {
+        position: fixed;
+        transition: 1s;
+        margin:0;
+    }
+
+    .menuBar.responsive .menu_icon {
+        position:absolute;
+        right:0;
+        top:0;
+    }
+
+    .menuBar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .menuBar .menu_icon {
+        display: block;
+        float: right;
+    }
+    
+    .menuBar a:hover::before{
+        transform: scaleX(0);
+        
+    }
+    .menuBar a:hover:not(:first-child){
+        color:rgb(216, 172, 27);
+    }
+}
+@media screen and (max-width: 730px){
+    .tab-content{
+        margin-top: 50px;
+        display: block;
+    }
+    .tab-content .image{
+        width: 100%;
+        height: 150px;
+    }
+    .booking-content{
+        width: 100%;
+    }
+    .booking{
+        height: 50rem;
+      }
+
+}
+@media screen and (max-width: 440px){
+    .tab-content{
+        margin-top: 30px;
+    }
+    .tab-label{
+        font-size: 12px;
+    }
+    .tab-label:hover{
+        top: 0;
+        border-radius: 0; 
+    }
+  .booking-content h2{
+    font-size: 18px;
+    padding-left:10px;
+  }
+}
+
+
+/*footer*/
+
+.container-footer{
+    max-width:1170px;
+    margin: 0;
+}
+.footer .row{
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0 50px 0;
+}
+.footer-col{
+    width: 25%;
+    margin-left: 50px;
+}
+
+.footer-col h4{ 
+    font-size: 18px;
+    color:#c0c0c0;
+    text-transform:capitalize ;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color:#ffffff ;
+    height:2px;
+    width: 60px;
+    box-sizing: border-box;
+}
+.footer iframe{
+    border: 4px solid rgb(128, 128, 128);
+    border-radius: 10px;
+    
+}
+.footer address{
+    margin-top: 7px;
+    color: rgb(255, 255, 255);
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li{
+    font-size : 16px;
+    text-transform: capitalize;
+    font-weight:300 ;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-col ul li a{
+    font-size : 16px;
+    text-transform: capitalize;
+    text-decoration : none; 
+    font-weight:300 ;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    /*padding-left: 5px;*/
+}
+.footer-col .social-links{
+    max-width: 130px;
+}
+.footer-col .social-links a{
+    display:inline-block;
+    font-size: 20px;
+    color: white;
+    height:50px ;
+    width: 50px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover:first-child{
+    color: #1877f2;
+    background-color: #ffffff;
+}
+.footer-col .social-links a:hover:nth-child(2){
+    color: #1f88ff;
+    background-color: #ffffff;
+}
+.footer-col .social-links a:hover:nth-child(3){
+    color: #ff1f9a;
+    background-color: #ffffff;
+}
+.footer-col .social-links a:hover:nth-child(4){
+    color: #9700d3;
+    background-color: #ffffff;
+}
+
+@media(max-width: 1200px){
+    .footer-col{
+        width: 35%;
+    }
+    .footer-col .social-links{
+        max-width: 100%;
+    }
+    .footer iframe{
+        width: 100%;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+@media(max-width: 1366px){
+    .footer-col{
+        margin-left: 25px;
+    }
+}
+
+.copyrights{
+    color: rgb(122, 122, 122);
+    background-color: black;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    font-size: small;
+}

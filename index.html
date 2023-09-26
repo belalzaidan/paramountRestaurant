@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Paramount</title>
+    <link rel="website icon" type="png" href="Images/favicon.png">
+</head>
+<body>
+    <div class="menuBar" id="menu_">
+        <a href="index.html" class="logo">Paramount</a>
+        <a href="index.html" class="this_page">Home</a>
+        <a href="booking.html">Booking</a>
+        <a href="data1100.html">Topical</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="restaurant.html">Menu</a>
+        <a href="wedding.html" >Wedding</a>
+        <a href="meeting.html">Meeting</a>
+        <a href="gaming.html">Gaming</a>
+        <a href="javascript:void(0);" class="menu_icon" onclick="menuIcon()"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="background-welcome">
+        <div class="background-welcomeText"><p>Welcome to <span> Paramount</span>!</p></div>
+    </div>
+    
+
+    <div class="backgroundImage-text welcomePage">
+        <h2>How are you going to celebrate today?</h2>
+        <h3>We have compiled it under a few titles for you!</h3>
+    </div>
+   <div class="Container">
+    <div class="card" id="Wedding">
+        <div class="overlay">
+            <div class="content">
+                <h2><span class="Wedding">Wedding</span></h2>
+                <a href="wedding.html">Explore More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="Restaurant">
+        <div class="overlay">
+            <div class="content">
+                <h2><span class="Restaurant">Menu</span></h2>
+                <a href="restaurant.html">Explore More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="Meeting">
+        <div class="overlay">
+            <div class="content">
+                <h2><span class="Meeting">Meetings</span></h2>
+                <a href="meeting.html">Explore More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="Gaming">
+        <div class="overlay">
+            <div class="content">
+                <h2><span class="Gaming">Gaming</span></h2>
+                <a href="gaming.html">Explore More</a>
+            </div>
+        </div>
+    </div>
+    </div> 
+
+    <footer class="footer" style="background-image: url(Images/Footer-background.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>opening hours</h4>
+                    <ul>
+                        <li>Monday - Thursday: 07:00 - 21:00</li>
+                        <li>Friday - Saturday: 07:00 - 00:00</li>
+                        <li>Sunday: 09:00 - 18:00</li>
+                    </ul>
+                    
+                </div> <br>
+                
+                <div class="footer-col">
+                    <h4>online reserve</h4>
+                    <ul>
+                        <li><a href="booking.html">booking page</a></li>
+                        <li><a href="restaurant.html">food and drink</a></li>
+                        <li><a href="meeting.html">meeting</a></li>
+                        <li><a href="wedding.html">wedding</a></li>
+                        <li><a href="gaming.html">gaming</a></li>
+                    </ul>
+                </div> <br>
+                
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/oslomet"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/OsloMet"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/oslomet/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/oslomet/?originalSubdomain=no"><i class="fab fab fab fa-linkedin-in"></i></a> <br> <br>
+                    </div>
+                </div> 
+                <div class="footer-col">
+                    <h4>visit us</h4>
+                    <div class="kart-adresse">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.6999441484495!2d-82.93129287337737!3d40.26759379574019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838f817d83b6f95%3A0xa7ae55b34b4479bd!2s7329%20US-36%2C%20Sunbury%2C%20OH%2043074%2C%20USA!5e0!3m2!1sno!2sno!4v1668525268764!5m2!1sno!2sno" width="350" height="200" style="border:1;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <address>7329 US-36, Sunbury, OH 43074, USA 
+                            <br> Tlf: <strong style="text-decoration:none ;">+54 584 55 248 </strong>
+                            <br> <a href="mailto:albortahotels@business.com" style="text-decoration: none; color:rgb(0, 157, 248)">Send Mail</a></address>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </footer>
+    <div class="copyrights">© 2022 Paramount. All rights reserved.</div>    
+    
+    <script>
+
+        function menuIcon() {
+            let x = document.getElementById("menu_");
+            if(x.className === "menuBar") {
+                x.className += "  responsive";
+            } else {
+                x.className = "menuBar";
+            }
+        }
+    </script>
+</body>
+</html>
